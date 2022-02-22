@@ -29,7 +29,6 @@ public class People
     }
 }
 
-
 public class MyList<T>
 {
     private T[] _elements;

@@ -1,5 +1,9 @@
-﻿
-string[] friends = new string[8]
+﻿// Declarar un array bidimensional sin inicializarlo e inicializarlo después
+int[] nums;
+nums = new int[] { 9, 2, 4, -3 ,22, 6, 14, 8, 1, 10, 11 };
+
+// Declarar un array e inicializarlo
+string[] friends = new string[8] // Donde 8 es la longitud del array
 {
     "Harry",
     "Nathalia",
@@ -11,15 +15,16 @@ string[] friends = new string[8]
     null
 };
 
-Console.WriteLine(friends[0]);
-Console.WriteLine(friends[1]);
-Console.WriteLine(friends[2]);
-Console.WriteLine(friends[3]);
-Console.WriteLine(friends[4]);
-Console.WriteLine(friends[5]);
-Console.WriteLine(friends[6]);
+// Ordenar array con el método Sort (ascending)
+Array.Sort(nums);
+Array.Sort(friends);
+Console.WriteLine(string.Join(", ", nums)); // Imprimir array como string
+Console.WriteLine(string.Join(", ", friends));
+
+// Invertir array
+Array.Reverse(nums);
+Array.Reverse(friends);
+Console.WriteLine(string.Join(", ", nums));
+Console.WriteLine(string.Join(", ", friends));
 
 
-friends[7] = "Carlos";
-
-Console.WriteLine(friends[7]);

@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 
 int number = 121212;
 double doubleNumber = 12.12;
